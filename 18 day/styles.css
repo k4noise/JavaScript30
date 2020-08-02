@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: thistle;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+p {
+  font-family: Consolas;
+  text-transform: uppercase;
+}
+
+.wrapper div {
+  margin: 15px 5px;
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.3);
+}
