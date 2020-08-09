@@ -1,0 +1,110 @@
+html {
+  box-sizing: border-box;
+  font-family: Consolas;
+  font-size: 20px;
+  font-weight: 200;
+  background: #eeeeee;
+}
+
+body {
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.site-wrap {
+  max-width: 1200px;
+  padding: 40px;
+  margin: auto;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: justify;
+  transform: scale(0.98);
+  transition: transform 0.5s;
+  background: white;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  text-align: center;
+  background: url(las.jpg) bottom center no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  color: black;
+  text-transform: uppercase;
+  font-size: 7vw;
+  text-shadow: 3px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+nav {
+  position: relative;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background: #3e57ef;
+  transition: all 0.5s;
+}
+
+.fixed-nav nav {
+  position: fixed;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.fixed-nav li.logo {
+  max-width: 500px;
+}
+.fixed-nav .site-wrap {
+  transform: scale(1);
+}
+
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: flex;
+  flex: 1;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+li.logo {
+  max-width: 0;
+  font-weight: 600;
+  font-size: 30px;
+  overflow: hidden;
+  background: white;
+  transition: all 0.5s;
+}
+
+li.logo a {
+  color: black;
+}
+
+nav a {
+  display: inline-block;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+
+
+img {
+  display: block;
+  margin: auto;
+}
